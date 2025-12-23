@@ -3,16 +3,16 @@ import { NavLink } from "react-router-dom";
 import { RESUME_FILENAME, RESUME_DISPLAY_NAME } from "../config/resume";
 
 const linkBase =
-  "relative rounded-full px-2 sm:px-3 py-1.5 text-xs sm:text-sm font-medium text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)] whitespace-nowrap";
+  "relative w-full rounded-full px-0 py-2 text-[clamp(0.78rem,2.9vw,1.05rem)] font-medium leading-none tracking-tight text-center text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)] whitespace-nowrap md:w-auto md:px-4 md:py-2 md:text-sm";
 
 const linkActive = "text-[var(--text-primary)]";
 
 export default function SiteNav() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 border-b border-[var(--border-color)] bg-[var(--nav-bg)] backdrop-blur w-full">
-      <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-7xl flex-col px-4 py-3 sm:px-6 md:flex-row md:items-center md:justify-between md:py-4">
         {/* Top Row - Logo and Social Icons */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between md:justify-start">
           <NavLink
             to="/"
             className="font-semibold tracking-tight text-[var(--text-primary)] whitespace-nowrap"
@@ -37,7 +37,7 @@ export default function SiteNav() {
         </div>
 
         {/* Navigation Links - Centered on mobile */}
-        <nav className="mt-3 flex flex-nowrap justify-center gap-0.5 sm:gap-2 border-t border-[var(--border-color)] pt-3 overflow-x-auto w-full">
+        <nav className="mt-3 grid w-full grid-cols-[1fr_1fr_1fr_1.35fr_1fr] gap-0 border-t border-[var(--border-color)] pt-3 sm:grid-cols-5 sm:gap-1 md:mt-0 md:flex md:flex-1 md:flex-nowrap md:justify-center md:gap-2 md:border-0 md:pt-0">
           <NavLink
             to="/"
             end
