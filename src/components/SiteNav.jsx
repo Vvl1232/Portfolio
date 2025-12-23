@@ -9,16 +9,16 @@ const linkActive = "text-[var(--text-primary)]";
 
 export default function SiteNav() {
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 border-b border-[var(--border-color)] bg-[var(--nav-bg)] backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <header className="fixed left-0 right-0 top-0 z-50 border-b border-[var(--border-color)] bg-[var(--nav-bg)] backdrop-blur w-full overflow-x-hidden">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 py-3 sm:py-4">
         <NavLink
           to="/"
-          className="font-semibold tracking-tight text-[var(--text-primary)]"
+          className="font-semibold tracking-tight text-[var(--text-primary)] whitespace-nowrap text-sm sm:text-base"
         >
           Vinit Limkar
         </NavLink>
 
-        <nav className="hidden items-center gap-2 md:flex">
+        <nav className="hidden items-center gap-1 sm:gap-2 md:flex flex-nowrap overflow-x-auto scrollbar-hide">
           <NavLink
             to="/"
             end
@@ -62,7 +62,7 @@ export default function SiteNav() {
           </NavLink>
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
           <a
             className="text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
             href="https://github.com/Vvl1232"
@@ -94,7 +94,7 @@ export default function SiteNav() {
             className="ml-3 flex items-center gap-1 rounded-full bg-[var(--primary-color)] px-4 py-2 text-sm font-medium text-black transition-colors hover:bg-[var(--accent-color)] hover:text-white"
           >
             <Download className="h-4 w-4" />
-            <span className="hidden sm:inline">Resume</span>
+            <span className="hidden xs:inline">Resume</span>
           </a>
         </div>
       </div>
