@@ -27,9 +27,9 @@ export default function SiteNav() {
             <a href="https://www.linkedin.com/in/vinit-limkar-b7a57a2a5" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <Linkedin className="h-5 w-5 text-[var(--text-secondary)] hover:text-[var(--text-primary)]" />
             </a>
-            <NavLink to="/contact" aria-label="Contact">
+            <a href="mailto:limkarvinit@gmail.com" aria-label="Email">
               <Mail className="h-5 w-5 text-[var(--text-secondary)] hover:text-[var(--text-primary)]" />
-            </NavLink>
+            </a>
             <a href={`/${RESUME_FILENAME}`} download={RESUME_DISPLAY_NAME} className="flex items-center gap-1 rounded-full bg-[var(--primary-color)] px-3 py-1.5 text-sm font-medium text-black hover:bg-[var(--accent-color)] hover:text-white">
               <Download className="h-4 w-4" />
             </a>
@@ -89,9 +89,9 @@ export default function SiteNav() {
           <a href="https://www.linkedin.com/in/vinit-limkar-b7a57a2a5" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <Linkedin className="h-5 w-5 text-[var(--text-secondary)] hover:text-[var(--text-primary)]" />
           </a>
-          <NavLink to="/contact" aria-label="Contact">
+          <a href="mailto:limkarvinit@gmail.com" aria-label="Email">
             <Mail className="h-5 w-5 text-[var(--text-secondary)] hover:text-[var(--text-primary)]" />
-          </NavLink>
+          </a>
           <a href={`/${RESUME_FILENAME}`} download={RESUME_DISPLAY_NAME} className="flex items-center gap-1 rounded-full bg-[var(--primary-color)] px-4 py-2 text-sm font-medium text-black hover:bg-[var(--accent-color)] hover:text-white">
             <Download className="h-4 w-4" />
             <span className="hidden sm:inline">Resume</span>

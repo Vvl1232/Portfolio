@@ -187,7 +187,7 @@ export default function Loader({ onComplete }) {
               height="428"
               viewBox="0 0 500 300"
               fill="none"
-              className="overflow-visible mx-auto block transform -translate-x-6 -translate-y-4"
+              className="overflow-visible mx-auto block transform -translate-x-[5%] -translate-y-4"
               initial={
                 reduceMotion
                   ? { y: 0, filter: "blur(0px)" }
