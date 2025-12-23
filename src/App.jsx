@@ -3,8 +3,8 @@ import { useEffect, useState, Suspense, lazy } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import RootLayout from "./layout/RootLayout";
 import Loader from "./components/Loader";
+import AIWordLoader from "./components/AIWordLoader";
 import { EASE_CINEMATIC } from "./utils/animations";
-import SEO from "./components/SEO";
 
 // Lazy load pages for better performance
 const Home = lazy(() => import("./pages/Home"));
@@ -38,7 +38,6 @@ function App() {
 
   return (
     <>
-      <SEO />
       <motion.div
         initial={{
           opacity: 0,
@@ -89,8 +88,8 @@ export default function AppWrapper() {
       <ScrollToTopOnRouteChange />
       <Suspense
         fallback={
-          <div className="min-h-screen flex items-center justify-center">
-            Loading...
+          <div className="min-h-screen flex items-center justify-center bg-gray-50">
+            <AIWordLoader />
           </div>
         }
       >
