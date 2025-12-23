@@ -82,7 +82,7 @@ const ProjectCard = ({ project, isExpanded, onClick }) => {
 
                 {project.isSIH && (
                   <span className="rounded bg-gradient-to-r from-amber-500 to-orange-600 px-2 py-0.5 text-xs font-bold text-white shadow-md">
-                    SIH Winner
+                    SIH Winning project
                   </span>
                 )}
               </div>
