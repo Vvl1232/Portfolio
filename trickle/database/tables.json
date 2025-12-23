@@ -1,0 +1,41 @@
+[
+  {
+    "name": "contact_message",
+    "fields": [
+      {
+        "name": "Name",
+        "type": "text",
+        "description": "Name of the person sending the message",
+        "options": null
+      },
+      {
+        "name": "Email",
+        "type": "text",
+        "description": "Email address of the sender",
+        "options": null
+      },
+      {
+        "name": "Subject",
+        "type": "text",
+        "description": "Subject of the message",
+        "options": null
+      },
+      {
+        "name": "Message",
+        "type": "rich_text",
+        "description": "The detailed message content",
+        "options": null
+      },
+      {
+        "name": "Status",
+        "type": "text",
+        "description": "Message status: new, read, replied",
+        "options": [
+          "new",
+          "read",
+          "replied"
+        ]
+      }
+    ]
+  }
+]
