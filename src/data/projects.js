@@ -41,7 +41,7 @@ export const projects = [
     isSIH: false,
     tech: [
       "Machine Learning",
-      "FinTech"
+      "FinTech",
       "Regression",
       "SHAP",
       "Streamlit"
