@@ -33,7 +33,7 @@ export const projects = [
     live: "https://peakminds-core.vercel.app/"
   },
 
-  /* ---------------- DEBT STRESS RADAR ---------------- */
+    /* ---------------- DEBT STRESS RADAR ---------------- */
   {
     slug: "debt-stress-radar",
     title: "Debt Stress Radar™",
@@ -41,10 +41,10 @@ export const projects = [
     isSIH: false,
     tech: [
       "Machine Learning",
+      "FinTech",
       "Regression",
       "SHAP",
-      "Streamlit",
-      "FinTech"
+      "Streamlit"
     ],
     problem:
       "Borrowers often realize financial stress too late, after EMI defaults or credit score drops, due to lack of early warning systems.",
