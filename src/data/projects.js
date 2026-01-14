@@ -62,7 +62,7 @@ export const projects = [
       }
     ],
     live: "https://sutnzypjggwokzmelqzac5.streamlit.app/"
-  }
+  },
 
   /* ---------------- MOVIE RECOMMENDATION SYSTEM ---------------- */
   {
@@ -205,7 +205,7 @@ export const projects = [
       }
     ],
     live: "https://share.streamlit.io/user/vvl1232"
-  },
+  }
 ];
 
 export const getProjectBySlug = (slug) => projects.find((p) => p.slug === slug);
