@@ -41,10 +41,10 @@ export const projects = [
     isSIH: false,
     tech: [
       "Machine Learning",
+      "FinTech"
       "Regression",
       "SHAP",
       "Streamlit",
-      "FinTech"
     ],
     problem:
       "Borrowers often realize financial stress too late, after EMI defaults or credit score drops, due to lack of early warning systems.",
