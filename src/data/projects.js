@@ -44,7 +44,7 @@ export const projects = [
       "FinTech"
       "Regression",
       "SHAP",
-      "Streamlit",
+      "Streamlit"
     ],
     problem:
       "Borrowers often realize financial stress too late, after EMI defaults or credit score drops, due to lack of early warning systems.",
