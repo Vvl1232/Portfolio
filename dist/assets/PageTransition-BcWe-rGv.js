@@ -1,0 +1,1 @@
+import{o,j as n,m as e,E as a}from"./index-4sEVc67P.js";function s({children:t}){const i=o();return n.jsx(e.div,{initial:{opacity:0,y:i?0:14,filter:i?"none":"blur(10px)"},animate:{opacity:1,y:0,filter:"blur(0px)"},exit:{opacity:0,y:i?0:-10,filter:i?"none":"blur(10px)"},transition:{duration:i?.2:.55,ease:a},children:t})}export{s as P};

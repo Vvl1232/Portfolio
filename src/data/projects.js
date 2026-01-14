@@ -33,6 +33,37 @@ export const projects = [
     live: "https://peakminds-core.vercel.app/"
   },
 
+    /* ---------------- DEBT STRESS RADAR ---------------- */
+  {
+    slug: "debt-stress-radar",
+    title: "Debt Stress Radar™",
+    category: "AI / ML",
+    isSIH: false,
+    tech: [
+      "Machine Learning",
+      "Regression",
+      "SHAP",
+      "Streamlit",
+      "FinTech"
+    ],
+    problem:
+      "Borrowers often realize financial stress too late, after EMI defaults or credit score drops, due to lack of early warning systems.",
+    solution:
+      "Built an explainable ML-based early warning system that predicts a continuous debt stress score, visualizes risk using a radar dashboard, and explains key risk drivers using SHAP.",
+    impact: [
+      { text: "Explainable AI-based financial risk assessment" },
+      { text: "Advisor-friendly, non-black-box ML system" },
+      { text: "Product-grade Streamlit deployment" }
+    ],
+    github: [
+      {
+        label: "GitHub Repository",
+        url: "https://github.com/Vvl1232/Debt-Stress-Radar-"
+      }
+    ],
+    live: "https://sutnzypjggwokzmelqzac5.streamlit.app/"
+  },
+
   /* ---------------- MOVIE RECOMMENDATION SYSTEM ---------------- */
   {
     title: "Movie Recommendation System",
