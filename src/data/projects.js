@@ -33,7 +33,7 @@ export const projects = [
     live: "https://peakminds-core.vercel.app/"
   },
 
-    /* ---------------- DEBT STRESS RADAR ---------------- */
+  /* ---------------- DEBT STRESS RADAR ---------------- */
   {
     slug: "debt-stress-radar",
     title: "Debt Stress Radar™",
