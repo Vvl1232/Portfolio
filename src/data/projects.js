@@ -58,6 +58,37 @@ export const projects = [
     live: "https://huggingface.co/spaces/Vinitlimkar38/ai-career-assistant"
   },
 
+    /* ---------------- AI TRAVEL PLANNER ---------------- */
+  {
+    title: "AI-Powered Travel Itinerary",
+    slug: slugify("AI-Powered Travel Itinerary"),
+    category: "AI Applications",
+    image: "/images/projects/travel.jpg",
+    icon: "map",
+    tech: [
+      "Python",
+      "Gemini API",
+      "Streamlit",
+      "Prompt Engineering"
+    ],
+    problem:
+      "Travel planning is time-consuming and fragmented across multiple platforms.",
+    solution:
+      "An AI-powered planner that generates smart itineraries based on user preferences, duration, and location.",
+    impact: [
+      { text: "Automated itinerary generation" },
+      { text: "Improved travel decision-making" },
+      { text: "Fast, user-friendly AI interface" }
+    ],
+    github: [
+      {
+        label: "GitHub Repo",
+        url: "https://github.com/Vvl1232/AI-powered-travel-planner"
+      }
+    ],
+    live: "https://ai-powered-travel-planner-doae9rxehnbyb5rx9k5oapp.streamlit.app/"
+  },
+
     /* ---------------- DEBT STRESS RADAR ---------------- */
   {
     slug: "debt-stress-radar",
@@ -168,38 +199,7 @@ export const projects = [
       }
     ],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71"
-  },
-
-  /* ---------------- AI TRAVEL PLANNER ---------------- */
-  {
-    title: "AI-Powered Travel Itinerary",
-    slug: slugify("AI-Powered Travel Itinerary"),
-    category: "AI Applications",
-    image: "/images/projects/travel.jpg",
-    icon: "map",
-    tech: [
-      "Python",
-      "AI Planning",
-      "Streamlit",
-      "Prompt Engineering"
-    ],
-    problem:
-      "Travel planning is time-consuming and fragmented across multiple platforms.",
-    solution:
-      "An AI-powered planner that generates smart itineraries based on user preferences, duration, and location.",
-    impact: [
-      { text: "Automated itinerary generation" },
-      { text: "Improved travel decision-making" },
-      { text: "Fast, user-friendly AI interface" }
-    ],
-    github: [
-      {
-        label: "GitHub Repo",
-        url: "https://github.com/Vvl1232/AI-powered-travel-planner"
-      }
-    ],
-    live: "https://ai-powered-travel-planner-doae9rxehnbyb5rx9k5oapp.streamlit.app/"
-  },
+  }
 
   /* ---------------- PYTHON PROJECTS ---------------- */
   {
