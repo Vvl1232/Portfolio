@@ -33,6 +33,31 @@ export const projects = [
     live: "https://peakminds-core.vercel.app/"
   },
 
+    /* ---------------- AI CAREER ASSISTANT ---------------- */
+  {
+    title: "AI Career Assistant",
+    slug: slugify("AI Career Assistant"),
+    category: "AI / ML, Hugging Face",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    tech: [
+      "Hugging Face",
+      "Transformers",
+      "Semantic Embeddings",
+      "LLMs",
+      "Hugging Face Spaces"
+    ],
+    problem: "Job seekers struggle with ATS optimization, skill gap identification, and generating tailored application materials across numerous job applications.",
+    solution: "Developed an AI-powered Career Assistant that analyzes resumes and job descriptions using semantic embeddings, calculates ATS scores, identifies missing skills, and generates AI-based suggestions using large language models.",
+    impact: [
+      { text: "ATS score calculation and optimization suggestions" },
+      { text: "Semantic skill gap analysis using embeddings" },
+      { text: "Deployed on Hugging Face Spaces for instant access" },
+      { text: "End-to-end AI recruitment assistance pipeline" }
+    ],
+    github: [],
+    live: "https://huggingface.co/spaces/Vinitlimkar38/ai-career-assistant"
+  },
+
     /* ---------------- DEBT STRESS RADAR ---------------- */
   {
     slug: "debt-stress-radar",
@@ -205,7 +230,8 @@ export const projects = [
       }
     ],
     live: "https://share.streamlit.io/user/vvl1232"
-  }
+  },
+
 ];
 
 export const getProjectBySlug = (slug) => projects.find((p) => p.slug === slug);
