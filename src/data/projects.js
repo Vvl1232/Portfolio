@@ -5,7 +5,48 @@ const slugify = (value) =>
     .replace(/(^-|-$)+/g, "");
 
 export const projects = [
-  /* ---------------- SIH WINNING PROJECT ---------------- */
+  /* ---------------- 1. AI CANDIDATE DISCOVERY PLATFORM ---------------- */
+  {
+    title: "AI Candidate Discovery Platform",
+    slug: slugify("AI Candidate Discovery Platform"),
+    category: "AI / ML",
+    isFeatured: true,
+    tech: [
+      "Python",
+      "Sentence Transformers",
+      "Hugging Face",
+      "FastAPI",
+      "Streamlit",
+      "Scikit-learn",
+      "Pandas",
+      "NumPy",
+      "Git",
+      "GitHub"
+    ],
+    problem:
+      "Recruiters face challenges in efficiently discovering, understanding, and ranking candidates from large resume pools without intelligent matching and explainable insights.",
+    solution:
+      "Developed an end-to-end AI-powered candidate discovery platform capable of semantic resume understanding, job matching, candidate ranking, explainable hiring insights, and recruiter reporting.",
+    impact: [
+      { text: "Semantic Resume Matching" },
+      { text: "Learning-to-Rank (LambdaMART)" },
+      { text: "Resume Parsing" },
+      { text: "Candidate Ranking" },
+      { text: "Explainable AI" },
+      { text: "Recruiter Dashboard" },
+      { text: "Potential Scoring" },
+      { text: "Intelligent Recommendation Engine" }
+    ],
+    github: [
+      {
+        label: "GitHub Repository",
+        url: "https://github.com/Vvl1232/EduBotX---TalentDNA-AI"
+      }
+    ],
+    live: "https://edubotx---talentdna-ai-53ur7yhy33x7m2cnqsvk9u.streamlit.app/"
+  },
+
+  /* ---------------- 2. SIH WINNING PROJECT ---------------- */
   {
     title: "ReWater AI Smart Water Intelligence Platform",
     slug: slugify("ReWater AI Smart Water Intelligence Platform"),
@@ -13,6 +54,7 @@ export const projects = [
     image: "/images/projects/peakminds.jpg",
     icon: "award",
     isSIH: true,
+    isFeatured: true,
     tech: [
       "Machine Learning",
       "Python",
@@ -33,63 +75,66 @@ export const projects = [
     live: "https://peakminds-core.vercel.app/"
   },
 
-    /* ---------------- AI CAREER ASSISTANT ---------------- */
+  /* ---------------- 3. BRAIN TUMOR DETECTION USING CNN ---------------- */
   {
-    title: "AI Career Assistant",
-    slug: slugify("AI Career Assistant"),
-    category: "AI / ML, Hugging Face",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    tech: [
-      "Hugging Face",
-      "Transformers",
-      "Semantic Embeddings",
-      "LLMs",
-      "Hugging Face Spaces"
-    ],
-    problem: "Job seekers struggle with ATS optimization, skill gap identification, and generating tailored application materials across numerous job applications.",
-    solution: "Developed an AI-powered Career Assistant that analyzes resumes and job descriptions using semantic embeddings, calculates ATS scores, identifies missing skills, and generates AI-based suggestions using large language models.",
-    impact: [
-      { text: "ATS score calculation and optimization suggestions" },
-      { text: "Semantic skill gap analysis using embeddings" },
-      { text: "Deployed on Hugging Face Spaces for instant access" },
-      { text: "End-to-end AI recruitment assistance pipeline" }
-    ],
-    github: [],
-    live: "https://huggingface.co/spaces/Vinitlimkar38/ai-career-assistant"
-  },
-
-    /* ---------------- DEBT STRESS RADAR ---------------- */
-  {
-    slug: "debt-stress-radar",
-    title: "Debt Stress Radar™",
+    title: "Brain Tumor Detection using CNN",
+    slug: slugify("Brain Tumor Detection using CNN"),
     category: "AI / ML",
-    isSIH: false,
     tech: [
-      "Machine Learning",
-      "FinTech",
-      "Regression",
-      "SHAP",
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "OpenCV",
+      "CNN",
       "Streamlit"
     ],
     problem:
-      "Borrowers often realize financial stress too late, after EMI defaults or credit score drops, due to lack of early warning systems.",
+      "Manual analysis of MRI scans for brain tumor diagnosis is time-consuming, error-prone, and requires specialized expertise, limiting scalability in clinical settings.",
     solution:
-      "Built an explainable ML-based early warning system that predicts a continuous debt stress score, visualizes risk using a radar dashboard, and explains key risk drivers using SHAP.",
+      "Developed a CNN-based deep learning model for multiclass brain tumor classification from MRI scans with an interactive Streamlit deployment.",
     impact: [
-      { text: "Explainable AI-based financial risk assessment" },
-      { text: "Advisor-friendly, non-black-box ML system" },
-      { text: "Product-grade Streamlit deployment" }
+      { text: "TensorFlow CNN" },
+      { text: "MRI Classification" },
+      { text: "Image Augmentation" },
+      { text: "Deep Learning" },
+      { text: "Real-time Prediction" },
+      { text: "Streamlit Deployment" }
     ],
     github: [
       {
         label: "GitHub Repository",
-        url: "https://github.com/Vvl1232/Debt-Stress-Radar-"
+        url: "https://github.com/Vvl1232/Brain-Tumor-Detection-CNN"
       }
     ],
-    live: "https://sutnzypjggwokzmelqzac5.streamlit.app/"
+    live: "https://brain-tumor-detection-cnn-pyecjj848exbkfo6bzyazk.streamlit.app/"
   },
 
-  /* ---------------- MOVIE RECOMMENDATION SYSTEM ---------------- */
+  /* ---------------- 4. SENTIMENT ANALYSIS ---------------- */
+  {
+    title: "Sentiment Analysis System",
+    slug: slugify("Sentiment Analysis System"),
+    category: "NLP",
+    tech: ["NLP", "NLTK", "Scikit-learn", "Python"],
+    icon: "message-circle",
+    problem:
+      "Manual sentiment classification does not scale for large text datasets.",
+    solution:
+      "Built an end-to-end NLP pipeline using TF-IDF and ML classifiers achieving high accuracy.",
+    impact: [
+      { text: "90% classification accuracy" },
+      { text: "Scalable text processing" },
+      { text: "Production-ready pipeline" }
+    ],
+    github: [
+      {
+        url: "https://github.com/Vvl1232/Sentiment-Analysis",
+        label: "GitHub Repo"
+      }
+    ],
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe"
+  },
+
+  /* ---------------- 5. MOVIE RECOMMENDATION SYSTEM ---------------- */
   {
     title: "Movie Recommendation System",
     slug: slugify("Movie Recommendation System"),
@@ -120,32 +165,7 @@ export const projects = [
     live: "https://movies-recommendation-system-ky7frujzrzneuqwkgxovbk.streamlit.app/"
   },
 
-  /* ---------------- SENTIMENT ANALYSIS ---------------- */
-  {
-    title: "Sentiment Analysis System",
-    slug: slugify("Sentiment Analysis System"),
-    category: "NLP",
-    tech: ["NLP", "NLTK", "Scikit-learn", "Python"],
-    icon: "message-circle",
-    problem:
-      "Manual sentiment classification does not scale for large text datasets.",
-    solution:
-      "Built an end-to-end NLP pipeline using TF-IDF and ML classifiers achieving high accuracy.",
-    impact: [
-      { text: "90% classification accuracy" },
-      { text: "Scalable text processing" },
-      { text: "Production-ready pipeline" }
-    ],
-    github: [
-      {
-        url: "https://github.com/Vvl1232/Sentiment-Analysis",
-        label: "GitHub Repo"
-      }
-    ],
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe"
-  },
-
-  /* ---------------- OPEN CV PROJECT ---------------- */
+  /* ---------------- 6. REAL-TIME OBJECT DETECTION ---------------- */
   {
     title: "Real-Time Object Detection",
     slug: slugify("Real-Time Object Detection"),
@@ -168,6 +188,62 @@ export const projects = [
       }
     ],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71"
+  },
+
+  /* ---------------- AI CAREER ASSISTANT ---------------- */
+  {
+    title: "AI Career Assistant",
+    slug: slugify("AI Career Assistant"),
+    category: "AI / ML, Hugging Face",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    tech: [
+      "Hugging Face",
+      "Transformers",
+      "Semantic Embeddings",
+      "LLMs",
+      "Hugging Face Spaces"
+    ],
+    problem: "Job seekers struggle with ATS optimization, skill gap identification, and generating tailored application materials across numerous job applications.",
+    solution: "Developed an AI-powered Career Assistant that analyzes resumes and job descriptions using semantic embeddings, calculates ATS scores, identifies missing skills, and generates AI-based suggestions using large language models.",
+    impact: [
+      { text: "ATS score calculation and optimization suggestions" },
+      { text: "Semantic skill gap analysis using embeddings" },
+      { text: "Deployed on Hugging Face Spaces for instant access" },
+      { text: "End-to-end AI recruitment assistance pipeline" }
+    ],
+    github: [],
+    live: "https://huggingface.co/spaces/Vinitlimkar38/ai-career-assistant"
+  },
+
+  /* ---------------- DEBT STRESS RADAR ---------------- */
+  {
+    slug: "debt-stress-radar",
+    title: "Debt Stress Radar™",
+    category: "AI / ML",
+    isSIH: false,
+    tech: [
+      "Machine Learning",
+      "FinTech",
+      "Regression",
+      "SHAP",
+      "Streamlit"
+    ],
+    problem:
+      "Borrowers often realize financial stress too late, after EMI defaults or credit score drops, due to lack of early warning systems.",
+    solution:
+      "Built an explainable ML-based early warning system that predicts a continuous debt stress score, visualizes risk using a radar dashboard, and explains key risk drivers using SHAP.",
+    impact: [
+      { text: "Explainable AI-based financial risk assessment" },
+      { text: "Advisor-friendly, non-black-box ML system" },
+      { text: "Product-grade Streamlit deployment" }
+    ],
+    github: [
+      {
+        label: "GitHub Repository",
+        url: "https://github.com/Vvl1232/Debt-Stress-Radar-"
+      }
+    ],
+    live: "https://sutnzypjggwokzmelqzac5.streamlit.app/"
   },
 
   /* ---------------- AI TRAVEL PLANNER ---------------- */

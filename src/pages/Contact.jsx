@@ -1,5 +1,5 @@
 import PageTransition from "../components/PageTransition";
-import { Mail, Linkedin, Github, ExternalLink } from "lucide-react";
+import { Mail, Linkedin, Github, ExternalLink, Phone, MapPin, Globe } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -12,7 +12,7 @@ export default function Contact() {
           </h1>
 
           <p className="mt-6 text-lg leading-relaxed text-[var(--text-secondary)]">
-            The fastest way to reach me is email. I’m open to internships,
+            The fastest way to reach me is email. I'm open to internships,
             collaborations, and impactful ML/AI projects.
           </p>
         </div>
@@ -30,6 +30,27 @@ export default function Contact() {
               >
                 limkarvinit@gmail.com
               </a>
+            </div>
+
+            {/* Phone */}
+            <div className="flex items-center gap-3">
+              <Phone className="h-4 w-4 text-cyan-300" />
+              <span className="text-[var(--text-secondary)]">Phone:</span>
+              <a
+                href="tel:+919860476527"
+                className="font-semibold text-cyan-300 hover:text-cyan-200"
+              >
+                +91 9860476527
+              </a>
+            </div>
+
+            {/* Location */}
+            <div className="flex items-center gap-3">
+              <MapPin className="h-4 w-4 text-cyan-300" />
+              <span className="text-[var(--text-secondary)]">Location:</span>
+              <span className="font-semibold text-[var(--text-primary)]">
+                Pune, Maharashtra
+              </span>
             </div>
 
             {/* LinkedIn */}

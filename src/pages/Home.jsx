@@ -25,7 +25,7 @@ export default function Home() {
               className="lg:col-span-7"
             >
               <p className="text-sm font-medium tracking-wide text-cyan-300/90 mb-2">
-                AI / ML / Data Science Engineer
+                AI/ML Engineer | Data Scientist | Deep Learning | NLP | Computer Vision
               </p>
 
               <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
@@ -35,7 +35,7 @@ export default function Home() {
               </h1>
 
               <p className="mt-6 text-xl text-[var(--text-secondary)] leading-relaxed">
-                Third-year Information Technology student and Smart India Hackathon 2025 winner, specializing in Machine Learning, Natural Language Processing, and Computer Vision. I build real-world, production-ready AI systems and continuously advance my expertise across modern AI domains.
+                Third-year Information Technology student and Smart India Hackathon Winner with hands-on experience in Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, NLP, Data Engineering, and Generative AI. Passionate about building intelligent, scalable, real-world AI solutions that solve meaningful problems.
               </p>
 
               {/* Location & Role */}
@@ -46,7 +46,7 @@ export default function Home() {
                 </span>
                 <span className="inline-flex items-center gap-1.5">
                   <Briefcase className="h-4 w-4" />
-                  AI/ML Intern
+                  AI/ML Engineer
                 </span>
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-500/10 px-3 py-1 text-xs font-medium text-amber-300">
                   <Award className="h-3.5 w-3.5" />
@@ -95,7 +95,8 @@ export default function Home() {
                 >
                   <img 
                     src="/images/vinit-limkar.jpg" 
-                    alt="Vinit Limkar" 
+                    alt="Vinit Limkar — AI/ML Engineer and Data Scientist from Pune, India" 
+                    loading="eager"
                     className="h-auto w-full object-cover saturate-90 brightness-95"
                     onError={(e) => {
                       // Fallback to a placeholder if the image fails to load
