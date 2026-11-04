@@ -42,74 +42,72 @@ const skillCategories = [
     title: "Machine Learning",
     gradient: "cyan",
     skills: [
-      "Supervised Learning", "Unsupervised Learning", "Classification",
-      "Regression", "Clustering", "Feature Engineering",
-      "Recommendation Systems", "Predictive Modeling", "Model Evaluation",
-      "Cross Validation", "Scikit-learn", "ML Pipelines",
+      "Classification", "Regression", "Clustering", "Feature Engineering",
+      "Model Evaluation", "Model Development", "Scikit-learn",
     ],
   },
   {
     title: "Deep Learning",
     gradient: "orange",
     skills: [
-      "TensorFlow", "Keras", "PyTorch", "CNN", "Transfer Learning",
-      "Neural Networks", "Medical Image Classification",
-      "Image Augmentation", "Hyperparameter Tuning",
-      "Model Optimization", "Deep Learning Pipelines",
+      "TensorFlow", "Keras", "PyTorch", "CNN", "Transfer Learning", "YOLOv8",
     ],
   },
   {
-    title: "Natural Language Processing",
+    title: "NLP",
     gradient: "purple",
     skills: [
-      "Natural Language Processing", "NLTK", "TF-IDF", "Text Processing",
-      "Sentiment Analysis", "Hugging Face", "Transformers",
-      "Sentence Transformers", "Semantic Search", "Prompt Engineering",
-      "Gemini API", "Resume Parsing",
+      "NLTK", "TF-IDF", "Text Processing", "Sentiment Analysis",
     ],
   },
   {
     title: "Computer Vision",
     gradient: "pink",
     skills: [
-      "OpenCV", "YOLOv8", "Object Detection", "Image Processing",
-      "Real-Time Detection", "MRI Image Classification",
-      "Bounding Boxes", "Feature Extraction", "Image Augmentation",
+      "OpenCV", "Image Processing", "Object Detection",
     ],
   },
   {
-    title: "AI Systems",
+    title: "Generative AI",
     gradient: "blue",
     skills: [
-      "Learning-to-Rank", "LambdaMART", "Candidate Ranking",
-      "Explainable AI (XAI)", "Embeddings", "Talent Matching",
-      "Recommendation Engine", "Resume Understanding",
-      "Job Understanding", "Recruiter Intelligence",
+      "Hugging Face", "Transformers", "Prompt Engineering", "Gemini API",
+    ],
+  },
+  {
+    title: "Big Data",
+    gradient: "green",
+    skills: [
+      "PySpark", "Apache Spark", "Apache Kafka",
     ],
   },
   {
     title: "Data Engineering",
-    gradient: "green",
+    gradient: "teal",
     skills: [
-      "Apache Spark", "PySpark", "Spark SQL", "RDD", "ETL Pipelines",
-      "Apache Kafka", "DataFrames", "Batch Processing", "Data Processing",
+      "ETL", "RDD", "DataFrames", "Spark SQL",
+    ],
+  },
+  {
+    title: "Data Analysis",
+    gradient: "orange",
+    skills: [
+      "NumPy", "Pandas", "Matplotlib", "Seaborn",
     ],
   },
   {
     title: "Programming",
     gradient: "yellow",
     skills: [
-      "Python", "Java", "C++", "SQL", "FastAPI", "REST APIs", "JSON",
-      "Object-Oriented Programming", "Data Structures", "Git",
+      "Python", "Java", "C++", "SQL",
     ],
   },
   {
-    title: "Tools & Workflow",
-    gradient: "teal",
+    title: "Software & Platforms",
+    gradient: "cyan",
     skills: [
-      "GitHub", "VS Code", "Streamlit", "Jupyter Notebook",
-      "Google Colab", "Pandas", "NumPy", "Matplotlib",
-      "Linux", "Google Cloud", "Vercel",
+      "Git", "GitHub", "Jupyter Notebook", "Google Colab",
+      "Streamlit", "Google Cloud", "VS Code",
     ],
   },
 ];
@@ -243,7 +241,7 @@ function Skills() {
               Skills &amp; Expertise
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Industry-aligned technical skills built through real-world AI, ML, and Data Engineering projects
+              Technical skills built through real-world AI, ML, Data Engineering, and Generative AI projects
             </p>
           </motion.div>
 

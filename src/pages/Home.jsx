@@ -25,7 +25,7 @@ export default function Home() {
               className="lg:col-span-7"
             >
               <p className="text-sm font-medium tracking-wide text-cyan-300/90 mb-2">
-                AI/ML Engineer | Data Scientist | Deep Learning | NLP | Computer Vision
+                AI/ML Engineer | Data Science Enthusiast | Deep Learning | NLP | Computer Vision
               </p>
 
               <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
@@ -35,7 +35,7 @@ export default function Home() {
               </h1>
 
               <p className="mt-6 text-xl text-[var(--text-secondary)] leading-relaxed">
-                Third-year Information Technology student and Smart India Hackathon Winner with hands-on experience in Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, NLP, Data Engineering, and Generative AI. Passionate about building intelligent, scalable, real-world AI solutions that solve meaningful problems.
+                Final year Information Technology student and Smart India Hackathon 2025 Winner with hands-on experience in AI/ML, Deep Learning, and NLP. Passionate about building intelligent, real-world AI solutions.
               </p>
 
               {/* Location & Role */}
@@ -95,7 +95,7 @@ export default function Home() {
                 >
                   <img 
                     src="/images/vinit-limkar.jpg" 
-                    alt="Vinit Limkar — AI/ML Engineer and Data Scientist from Pune, India" 
+                    alt="Vinit Limkar — AI/ML Engineer and Data Science Enthusiast from Pune, India" 
                     loading="eager"
                     className="h-auto w-full object-cover saturate-90 brightness-95"
                     onError={(e) => {

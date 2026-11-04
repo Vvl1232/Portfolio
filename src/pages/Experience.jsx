@@ -28,13 +28,13 @@ export default function Experience() {
                 <div className="flex items-start justify-between gap-3">
                   <div>
                     <p className="font-medium text-[var(--text-primary)]">
-                      Technical Head & Mentor — IIC E-Cell
+                      President & Technical Mentor — IIC E-Cell
                     </p>
                     <p className="mt-0.5 text-xs text-cyan-400">Aug 2025 – Present</p>
                     <ul className="mt-2 space-y-1 text-sm list-disc list-inside">
-                      <li>Led the technical team responsible for developing and maintaining the official E-Cell website.</li>
+                      <li>Led technical projects, managed the college website, and organized major campus innovation events.</li>
                       <li>Mentored student members on web development, AI/ML, and technical project execution.</li>
-                      <li>Coordinated technical planning for Hackathons, Internship Fair, Ideathons, and innovation initiatives.</li>
+                      <li>Organized Hackathons, Internship Fair, Mega Ideathon, and other innovation initiatives.</li>
                       <li>Collaborated with cross-functional teams to improve digital infrastructure and event management systems.</li>
                     </ul>
                     <div className="mt-3 flex flex-wrap gap-1.5">
@@ -45,6 +45,37 @@ export default function Experience() {
                   </div>
                   <a
                     href="https://iicecellskncoe.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-1 shrink-0 text-cyan-400 hover:text-cyan-300"
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                </div>
+              </div>
+
+              {/* ZeroGravity */}
+              <div className="rounded-xl border border-[var(--border-color)] bg-[var(--surface-2)] p-4">
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="font-medium text-[var(--text-primary)]">
+                      Chief Coordinator — ZeroGravity
+                    </p>
+                    <p className="mt-0.5 text-xs text-cyan-400">Jan 2025 – Present</p>
+                    <ul className="mt-2 space-y-1 text-sm list-disc list-inside">
+                      <li>Coordinated technical events and seminars improving student engagement across campus.</li>
+                      <li>Organized 2 Stage Idea Presentation Competition Innovio 2k26 as Event Coordinator.</li>
+                      <li>Organized 2 day flagship event Technospark2k26.</li>
+                      <li>Collaborated with cross-functional teams to streamline event planning and execution.</li>
+                    </ul>
+                    <div className="mt-3 flex flex-wrap gap-1.5">
+                      {["Event Management","Leadership","Team Collaboration","Planning"].map((t) => (
+                        <span key={t} className="rounded-full border border-[var(--border-color)] bg-[var(--surface-1)] px-2.5 py-0.5 text-xs text-[var(--text-secondary)]">{t}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <a
+                    href="https://www.linkedin.com/company/zerogravity-cc/"
                     target="_blank"
                     rel="noreferrer"
                     className="mt-1 shrink-0 text-cyan-400 hover:text-cyan-300"
@@ -66,7 +97,7 @@ export default function Experience() {
                       <li>Developed Machine Learning and NLP-based applications.</li>
                       <li>Built a Sentiment Analysis model using TF-IDF and Scikit-learn.</li>
                       <li>Developed a Movie Recommendation System using cosine similarity.</li>
-                      <li>Performed data preprocessing, feature engineering, model evaluation, and optimization.</li>
+                      <li>Implemented TF-IDF, cosine similarity, and evaluation metrics improving model performance by 95%.</li>
                     </ul>
                     <div className="mt-3 flex flex-wrap gap-1.5">
                       {["Python","Scikit-learn","NLTK","Pandas","NumPy","TF-IDF","Machine Learning"].map((t) => (
@@ -94,9 +125,8 @@ export default function Experience() {
                     </p>
                     <p className="mt-0.5 text-xs text-cyan-400">Mar 2025 – Apr 2025</p>
                     <ul className="mt-2 space-y-1 text-sm list-disc list-inside">
-                      <li>Built and deployed machine learning models for real-world prediction tasks.</li>
-                      <li>Engineered data cleaning, preprocessing, feature scaling, and model optimization pipelines.</li>
-                      <li>Optimized model performance through systematic hyperparameter tuning.</li>
+                      <li>Developed an ML model using Python and Scikit-Learn, improving prediction accuracy by 90%.</li>
+                      <li>Performed data cleaning, feature scaling, and hyperparameter tuning for optimized performance.</li>
                       <li>Implemented end-to-end ML workflows with real-world datasets and Scikit-learn pipelines.</li>
                     </ul>
                     <div className="mt-3 flex flex-wrap gap-1.5">
@@ -116,36 +146,6 @@ export default function Experience() {
                 </div>
               </div>
 
-              {/* ZeroGravity */}
-              <div className="rounded-xl border border-[var(--border-color)] bg-[var(--surface-2)] p-4">
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <p className="font-medium text-[var(--text-primary)]">
-                      Event Management Team Member — ZeroGravity
-                    </p>
-                    <p className="mt-0.5 text-xs text-cyan-400">Jan 2025 – Present</p>
-                    <ul className="mt-2 space-y-1 text-sm list-disc list-inside">
-                      <li>Coordinated technical and innovation events across departments.</li>
-                      <li>Managed end-to-end registrations and event execution workflows.</li>
-                      <li>Organized Innovio 2K26 as lead Event Coordinator.</li>
-                      <li>Collaborated with cross-functional teams to streamline event operations.</li>
-                    </ul>
-                    <div className="mt-3 flex flex-wrap gap-1.5">
-                      {["Event Management","Leadership","Team Collaboration","Planning"].map((t) => (
-                        <span key={t} className="rounded-full border border-[var(--border-color)] bg-[var(--surface-1)] px-2.5 py-0.5 text-xs text-[var(--text-secondary)]">{t}</span>
-                      ))}
-                    </div>
-                  </div>
-                  <a
-                    href="https://www.linkedin.com/company/zerogravity-cc/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-1 shrink-0 text-cyan-400 hover:text-cyan-300"
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                  </a>
-                </div>
-              </div>
 
               {/* PreGrad */}
               <div className="rounded-xl border border-[var(--border-color)] bg-[var(--surface-2)] p-4">
@@ -273,6 +273,7 @@ export default function Experience() {
                       { sem: "Semester 3", cgpa: "9.32" },
                       { sem: "Semester 4", cgpa: "8.73" },
                       { sem: "Semester 5", cgpa: "8.38" },
+                      { sem: "Semester 6", cgpa: "9.18" },
                     ].map(({ sem, cgpa }) => (
                       <div key={sem} className="flex items-center justify-between">
                         <span className="text-xs">{sem}</span>
@@ -281,6 +282,32 @@ export default function Experience() {
                     ))}
                   </div>
                 </div>
+              </div>
+
+              <div className="rounded-xl border border-[var(--border-color)] bg-[var(--surface-2)] p-4">
+                <p className="font-medium text-[var(--text-primary)]">
+                  Science (PCM + Computer Science)
+                </p>
+                <p className="mt-0.5 text-xs text-cyan-400">2022 – 2023</p>
+                <p className="mt-1">
+                  M.I.T. Junior College
+                </p>
+                <p className="text-xs mt-1">
+                  HSC — 71.17%
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-[var(--border-color)] bg-[var(--surface-2)] p-4">
+                <p className="font-medium text-[var(--text-primary)]">
+                  SSC 10th
+                </p>
+                <p className="mt-0.5 text-xs text-cyan-400">2021</p>
+                <p className="mt-1">
+                  Sahyadri National School
+                </p>
+                <p className="text-xs mt-1">
+                  SSC — 85.4%
+                </p>
               </div>
             </div>
           </div>

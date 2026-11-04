@@ -83,6 +83,21 @@ export default function Contact() {
               </a>
             </div>
 
+            {/* Portfolio */}
+            <div className="flex items-center gap-3">
+              <Globe className="h-4 w-4 text-cyan-300" />
+              <span className="text-[var(--text-secondary)]">Portfolio:</span>
+              <a
+                href="https://vinit-limkar-portfolio.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="font-semibold text-cyan-300 hover:text-cyan-200 inline-flex items-center gap-1"
+              >
+                vinit-limkar-portfolio.vercel.app
+                <ExternalLink className="h-3 w-3" />
+              </a>
+            </div>
+
             {/* Streamlit */}
             <div className="flex items-center gap-3">
               <ExternalLink className="h-4 w-4 text-cyan-300" />
