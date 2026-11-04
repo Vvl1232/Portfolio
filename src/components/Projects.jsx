@@ -12,8 +12,7 @@ import {
   Eye,
   Bot,
   MessageCircle,
-  Code,
-  Star
+  Code
 } from "lucide-react";
 
 import { EASE_CINEMATIC } from "../utils/animations";
@@ -26,7 +25,10 @@ const getCategoryIcon = (category) => {
     case "ai / ml":
       return Cpu;
     case "machine learning":
+    case "deep learning":
       return Brain;
+    case "generative ai":
+      return Bot;
     case "nlp":
       return MessageCircle;
     case "computer vision":
@@ -58,15 +60,7 @@ const ProjectCard = ({ project, isExpanded, onClick }) => {
         transition-all duration-300`}
     >
       {/* Header */}
-      <div
-        className="cursor-pointer"
-        onClick={onClick}
-        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(); } }}
-        role="button"
-        tabIndex={0}
-        aria-expanded={isExpanded}
-        aria-label={`${isExpanded ? 'Collapse' : 'Expand'} details for ${project.title}`}
-      >
+      <div className="cursor-pointer" onClick={onClick}>
         <div className="p-6">
           <div className="mb-4 flex items-start gap-4">
             {/* Icon */}
@@ -92,13 +86,6 @@ const ProjectCard = ({ project, isExpanded, onClick }) => {
                 {project.isSIH && (
                   <span className="rounded bg-gradient-to-r from-amber-500 to-orange-600 px-2 py-0.5 text-xs font-bold text-white shadow-md">
                     SIH Winning project
-                  </span>
-                )}
-
-                {project.isFeatured && !project.isSIH && (
-                  <span className="inline-flex items-center gap-1 rounded bg-cyan-500/15 border border-cyan-400/25 px-2 py-0.5 text-xs font-semibold text-cyan-300">
-                    <Star className="h-3 w-3" />
-                    Featured
                   </span>
                 )}
               </div>
@@ -150,8 +137,7 @@ const ProjectCard = ({ project, isExpanded, onClick }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="rounded-lg p-2 hover:bg-gray-800/50 transition-colors"
-                  aria-label={`View ${project.title} on GitHub`}
+                  className="rounded-lg p-2 hover:bg-gray-800/50"
                 >
                   <Github className="h-4 w-4 text-gray-400" />
                 </a>
@@ -163,8 +149,7 @@ const ProjectCard = ({ project, isExpanded, onClick }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="rounded-lg p-2 hover:bg-gray-800/50 transition-colors"
-                  aria-label={`View live demo of ${project.title}`}
+                  className="rounded-lg p-2 hover:bg-gray-800/50"
                 >
                   <ExternalLink className="h-4 w-4 text-gray-400" />
                 </a>

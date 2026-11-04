@@ -12,6 +12,7 @@ const Experience = lazy(() => import("./pages/Experience"));
 const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
 const Projects = lazy(() => import("./pages/Projects"));
 const Skills = lazy(() => import("./pages/Skills"));
+const Resume = lazy(() => import("./pages/Resume"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 function ScrollToTopOnRouteChange() {
@@ -63,6 +64,7 @@ function App() {
               <Route path="skills" element={<Skills />} />
               <Route path="experience" element={<Experience />} />
               <Route path="contact" element={<Contact />} />
+              <Route path="resume" element={<Resume />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>

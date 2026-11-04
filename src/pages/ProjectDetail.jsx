@@ -22,7 +22,10 @@ const getCategoryIcon = (category) => {
     case "ai / ml":
       return Cpu;
     case "machine learning":
+    case "deep learning":
       return Brain;
+    case "generative ai":
+      return Bot;
     case "nlp":
       return MessageCircle;
     case "computer vision":

@@ -5,136 +5,101 @@ const slugify = (value) =>
     .replace(/(^-|-$)+/g, "");
 
 export const projects = [
-  /* ---------------- 1. AI CANDIDATE DISCOVERY PLATFORM ---------------- */
+  /* ---------------- SIH WINNING PROJECT ---------------- */
+  {
+    title: "ReWater AI – Wastewater Reuse Platform",
+    slug: slugify("ReWater AI Wastewater Reuse Platform"),
+    category: "AI / ML",
+    image: "/images/projects/peakminds.jpg",
+    icon: "award",
+    isSIH: true,
+    tech: [
+      "Machine Learning",
+      "Python",
+      "Streamlit",
+      "Water Quality Analytics",
+      "Decision Support"
+    ],
+    problem:
+      "Industries struggle with real-time wastewater monitoring, compliance validation, and decision support for treatment processes.",
+    solution:
+      "Smart India Hackathon Winning Product: Developed ML models for wastewater quality analysis and real-time treatment decision support.",
+    impact: [
+      { text: "Winner – Smart India Hackathon 2025" },
+      { text: "Real-world industrial wastewater quality analysis" },
+      { text: "Real-time treatment decision support system" }
+    ],
+    github: [],
+    live: "https://edubotx-rewaters.vercel.app/"
+  },
+
+  /* ---------------- AI CANDIDATE DISCOVERY PLATFORM ---------------- */
   {
     title: "AI Candidate Discovery Platform",
     slug: slugify("AI Candidate Discovery Platform"),
     category: "AI / ML",
-    isFeatured: true,
+    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800",
+    icon: "bot",
     tech: [
       "Python",
-      "Sentence Transformers",
-      "Hugging Face",
-      "FastAPI",
       "Streamlit",
-      "Scikit-learn",
-      "Pandas",
-      "NumPy",
-      "Git",
-      "GitHub"
+      "Generative AI",
+      "NLP",
+      "Talent Intelligence",
+      "Candidate Scoring"
     ],
     problem:
-      "Recruiters face challenges in efficiently discovering, understanding, and ranking candidates from large resume pools without intelligent matching and explainable insights.",
+      "Recruiters struggle with manual candidate discovery, resume screening inefficiencies, and a lack of transparent, explainable scoring insights.",
     solution:
-      "Developed an end-to-end AI-powered candidate discovery platform capable of semantic resume understanding, job matching, candidate ranking, explainable hiring insights, and recruiter reporting.",
+      "Built an AI-powered talent intelligence platform for candidate discovery, potential scoring, and explainable hiring insights for the Redrob AI Hackathon Challenge.",
     impact: [
-      { text: "Semantic Resume Matching" },
-      { text: "Learning-to-Rank (LambdaMART)" },
-      { text: "Resume Parsing" },
-      { text: "Candidate Ranking" },
-      { text: "Explainable AI" },
-      { text: "Recruiter Dashboard" },
-      { text: "Potential Scoring" },
-      { text: "Intelligent Recommendation Engine" }
+      { text: "Redrob AI Hackathon Challenge Project" },
+      { text: "AI-driven talent discovery & scoring engine" },
+      { text: "Explainable hiring insights for recruiters" }
     ],
     github: [
       {
-        label: "GitHub Repository",
+        label: "GitHub Repo",
         url: "https://github.com/Vvl1232/EduBotX---TalentDNA-AI"
       }
     ],
     live: "https://edubotx---talentdna-ai-53ur7yhy33x7m2cnqsvk9u.streamlit.app/"
   },
 
-  /* ---------------- 2. SIH WINNING PROJECT ---------------- */
-  {
-    title: "ReWater AI Smart Water Intelligence Platform",
-    slug: slugify("ReWater AI Smart Water Intelligence Platform"),
-    category: "AI / ML",
-    image: "/images/projects/peakminds.jpg",
-    icon: "award",
-    isSIH: true,
-    isFeatured: true,
-    tech: [
-      "Machine Learning",
-      "Python",
-      "Streamlit",
-      "Water Quality Analytics",
-      "Data Science"
-    ],
-    problem:
-      "Industries struggle with real-time wastewater monitoring, compliance validation, and decision support for treatment processes.",
-    solution:
-      "An AI-driven smart water intelligence platform that predicts water quality, checks regulatory compliance, and assists operators with treatment insights.",
-    impact: [
-      { text: "Winner – Smart India Hackathon (SIH)" },
-      { text: "Real-world industrial wastewater use case" },
-      { text: "Built as ML Developer in a team environment" }
-    ],
-    github: [],
-    live: "https://peakminds-core.vercel.app/"
-  },
-
-  /* ---------------- 3. BRAIN TUMOR DETECTION USING CNN ---------------- */
+  /* ---------------- BRAIN TUMOR DETECTION USING CNN ---------------- */
   {
     title: "Brain Tumor Detection using CNN",
     slug: slugify("Brain Tumor Detection using CNN"),
-    category: "AI / ML",
+    category: "Deep Learning",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800",
+    icon: "brain",
     tech: [
-      "Python",
+      "CNN",
+      "Deep Learning",
       "TensorFlow",
       "Keras",
-      "OpenCV",
-      "CNN",
-      "Streamlit"
+      "Streamlit",
+      "Medical Imaging"
     ],
     problem:
-      "Manual analysis of MRI scans for brain tumor diagnosis is time-consuming, error-prone, and requires specialized expertise, limiting scalability in clinical settings.",
+      "Manual classification of brain tumors from MRI scans is time-consuming and requires automated secondary validation tools to assist clinical diagnosis.",
     solution:
       "Developed a CNN-based deep learning model for multiclass brain tumor classification from MRI scans with an interactive Streamlit deployment.",
     impact: [
-      { text: "TensorFlow CNN" },
-      { text: "MRI Classification" },
-      { text: "Image Augmentation" },
-      { text: "Deep Learning" },
-      { text: "Real-time Prediction" },
-      { text: "Streamlit Deployment" }
+      { text: "Multiclass brain tumor classification" },
+      { text: "Interactive Streamlit web deployment" },
+      { text: "High-accuracy MRI scan diagnostic inference" }
     ],
     github: [
       {
-        label: "GitHub Repository",
+        label: "GitHub Repo",
         url: "https://github.com/Vvl1232/Brain-Tumor-Detection-CNN"
       }
     ],
     live: "https://brain-tumor-detection-cnn-pyecjj848exbkfo6bzyazk.streamlit.app/"
   },
 
-  /* ---------------- 4. SENTIMENT ANALYSIS ---------------- */
-  {
-    title: "Sentiment Analysis System",
-    slug: slugify("Sentiment Analysis System"),
-    category: "NLP",
-    tech: ["NLP", "NLTK", "Scikit-learn", "Python"],
-    icon: "message-circle",
-    problem:
-      "Manual sentiment classification does not scale for large text datasets.",
-    solution:
-      "Built an end-to-end NLP pipeline using TF-IDF and ML classifiers achieving high accuracy.",
-    impact: [
-      { text: "90% classification accuracy" },
-      { text: "Scalable text processing" },
-      { text: "Production-ready pipeline" }
-    ],
-    github: [
-      {
-        url: "https://github.com/Vvl1232/Sentiment-Analysis",
-        label: "GitHub Repo"
-      }
-    ],
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe"
-  },
-
-  /* ---------------- 5. MOVIE RECOMMENDATION SYSTEM ---------------- */
+  /* ---------------- MOVIE RECOMMENDATION SYSTEM ---------------- */
   {
     title: "Movie Recommendation System",
     slug: slugify("Movie Recommendation System"),
@@ -145,16 +110,17 @@ export const projects = [
       "Python",
       "Machine Learning",
       "Collaborative Filtering",
+      "Cosine Similarity",
       "Streamlit"
     ],
     problem:
-      "Users face content overload and struggle to find movies aligned with their preferences.",
+      "Users face content overload and struggle to find movies aligned with their preferences and tastes.",
     solution:
-      "A machine-learning-based recommendation engine that suggests personalized movies using similarity models.",
+      "Created a personalized movie recommendation engine using ML, cosine similarity, and collaborative filtering algorithms.",
     impact: [
-      { text: "Personalized recommendations" },
-      { text: "Deployed interactive ML app" },
-      { text: "End-to-end ML pipeline" }
+      { text: "Personalized movie recommendations" },
+      { text: "Deployed interactive Streamlit app" },
+      { text: "End-to-end ML recommendation pipeline" }
     ],
     github: [
       {
@@ -165,7 +131,32 @@ export const projects = [
     live: "https://movies-recommendation-system-ky7frujzrzneuqwkgxovbk.streamlit.app/"
   },
 
-  /* ---------------- 6. REAL-TIME OBJECT DETECTION ---------------- */
+  /* ---------------- SENTIMENT ANALYSIS ON USER REVIEWS ---------------- */
+  {
+    title: "Sentiment Analysis on User Reviews",
+    slug: slugify("Sentiment Analysis on User Reviews"),
+    category: "NLP",
+    tech: ["NLP", "NLTK", "Scikit-learn", "Python", "TF-IDF"],
+    icon: "message-circle",
+    problem:
+      "Manual sentiment classification does not scale for large text datasets and customer feedback reviews.",
+    solution:
+      "Built a machine learning-based text classifier achieving 90% accuracy using TF-IDF vectorization and NLTK.",
+    impact: [
+      { text: "90% classification accuracy" },
+      { text: "Scalable text processing & TF-IDF" },
+      { text: "Production-ready NLP pipeline" }
+    ],
+    github: [
+      {
+        url: "https://github.com/Vvl1232/Sentiment-Analysis",
+        label: "GitHub Repo"
+      }
+    ],
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe"
+  },
+
+  /* ---------------- REAL-TIME OBJECT DETECTION ---------------- */
   {
     title: "Real-Time Object Detection",
     slug: slugify("Real-Time Object Detection"),
@@ -173,77 +164,25 @@ export const projects = [
     tech: ["YOLOv8", "OpenCV", "Python", "Deep Learning"],
     icon: "eye",
     problem:
-      "Object detection models often fail to meet real-time latency requirements.",
+      "Object detection models often fail to maintain real-time low-latency throughput on dynamic video feeds.",
     solution:
-      "Optimized YOLOv8 inference pipeline with preprocessing and bounding-box tuning to achieve real-time FPS.",
+      "Developed a high-performance real-time object detection system using YOLOv8, OpenCV, and optimized inference.",
     impact: [
-      { text: "30 FPS real-time detection" },
-      { text: "Multi-class object recognition" },
-      { text: "Low-latency deployment ready" }
+      { text: "High-performance real-time detection" },
+      { text: "YOLOv8 multi-class object detection" },
+      { text: "Optimized OpenCV video stream processing" }
     ],
     github: [
       {
         url: "https://github.com/Vvl1232/OpenCV-Hand-placement-project",
         label: "GitHub Repo"
+      },
+      {
+        url: "https://github.com/Vvl1232/Realtime-CV-object-Detector-using-YOLOv8m",
+        label: "YOLOv8m Model Repo"
       }
     ],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71"
-  },
-
-  /* ---------------- AI CAREER ASSISTANT ---------------- */
-  {
-    title: "AI Career Assistant",
-    slug: slugify("AI Career Assistant"),
-    category: "AI / ML, Hugging Face",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    tech: [
-      "Hugging Face",
-      "Transformers",
-      "Semantic Embeddings",
-      "LLMs",
-      "Hugging Face Spaces"
-    ],
-    problem: "Job seekers struggle with ATS optimization, skill gap identification, and generating tailored application materials across numerous job applications.",
-    solution: "Developed an AI-powered Career Assistant that analyzes resumes and job descriptions using semantic embeddings, calculates ATS scores, identifies missing skills, and generates AI-based suggestions using large language models.",
-    impact: [
-      { text: "ATS score calculation and optimization suggestions" },
-      { text: "Semantic skill gap analysis using embeddings" },
-      { text: "Deployed on Hugging Face Spaces for instant access" },
-      { text: "End-to-end AI recruitment assistance pipeline" }
-    ],
-    github: [],
-    live: "https://huggingface.co/spaces/Vinitlimkar38/ai-career-assistant"
-  },
-
-  /* ---------------- DEBT STRESS RADAR ---------------- */
-  {
-    slug: "debt-stress-radar",
-    title: "Debt Stress Radar™",
-    category: "AI / ML",
-    isSIH: false,
-    tech: [
-      "Machine Learning",
-      "FinTech",
-      "Regression",
-      "SHAP",
-      "Streamlit"
-    ],
-    problem:
-      "Borrowers often realize financial stress too late, after EMI defaults or credit score drops, due to lack of early warning systems.",
-    solution:
-      "Built an explainable ML-based early warning system that predicts a continuous debt stress score, visualizes risk using a radar dashboard, and explains key risk drivers using SHAP.",
-    impact: [
-      { text: "Explainable AI-based financial risk assessment" },
-      { text: "Advisor-friendly, non-black-box ML system" },
-      { text: "Product-grade Streamlit deployment" }
-    ],
-    github: [
-      {
-        label: "GitHub Repository",
-        url: "https://github.com/Vvl1232/Debt-Stress-Radar-"
-      }
-    ],
-    live: "https://sutnzypjggwokzmelqzac5.streamlit.app/"
   },
 
   /* ---------------- AI TRAVEL PLANNER ---------------- */
@@ -277,37 +216,61 @@ export const projects = [
     live: "https://ai-powered-travel-planner-doae9rxehnbyb5rx9k5oapp.streamlit.app/"
   },
 
-  /* ---------------- PYTHON PROJECTS ---------------- */
+  /* ---------------- AI CAREER ASSISTANT ---------------- */
   {
-    title: "Python Projects Collection",
-    slug: slugify("Python Projects Collection"),
-    category: "Python Development",
-    image: "/images/projects/mini-projects.jpg",
-    icon: "code",
+    title: "AI Career Assistant",
+    slug: slugify("AI Career Assistant"),
+    category: "AI Applications",
+    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     tech: [
-      "Python",
-      "Various Libraries",
-      "Data Analysis",
-      "Web Development"
+      "Hugging Face",
+      "Transformers",
+      "Semantic Embeddings",
+      "LLMs",
+      "Hugging Face Spaces"
+    ],
+    problem: "Job seekers struggle with ATS optimization, skill gap identification, and generating tailored application materials across numerous job applications.",
+    solution: "Developed an AI-powered Career Assistant that analyzes resumes and job descriptions using semantic embeddings, calculates ATS scores, identifies missing skills, and generates AI-based suggestions using large language models.",
+    impact: [
+      { text: "ATS score calculation and optimization suggestions" },
+      { text: "Semantic skill gap analysis using embeddings" },
+      { text: "Deployed on Hugging Face Spaces for instant access" },
+      { text: "End-to-end AI recruitment assistance pipeline" }
+    ],
+    github: [],
+    live: "https://huggingface.co/spaces/Vinitlimkar38/ai-career-assistant"
+  },
+
+  /* ---------------- DEBT STRESS RADAR ---------------- */
+  {
+    slug: slugify("Debt Stress Radar"),
+    title: "Debt Stress Radar™",
+    category: "Machine Learning",
+    isSIH: false,
+    tech: [
+      "Machine Learning",
+      "FinTech",
+      "Regression",
+      "SHAP",
+      "Streamlit"
     ],
     problem:
-      "Need for practical implementation of Python programming concepts and libraries.",
+      "Borrowers often realize financial stress too late, after EMI defaults or credit score drops, due to lack of early warning systems.",
     solution:
-      "A collection of Python projects demonstrating various applications and problem-solving approaches.",
+      "Built an explainable ML-based early warning system that predicts a continuous debt stress score, visualizes risk using a radar dashboard, and explains key risk drivers using SHAP.",
     impact: [
-      { text: "Diverse Python implementations" },
-      { text: "Practical application of concepts" },
-      { text: "Showcases coding versatility" }
+      { text: "Explainable AI-based financial risk assessment" },
+      { text: "Advisor-friendly, non-black-box ML system" },
+      { text: "Product-grade Streamlit deployment" }
     ],
     github: [
       {
-        label: "GitHub Profile",
-        url: "https://github.com/Vvl1232"
+        label: "GitHub Repository",
+        url: "https://github.com/Vvl1232/Debt-Stress-Radar-"
       }
     ],
-    live: "https://share.streamlit.io/user/vvl1232"
-  },
-
+    live: "https://sutnzypjggwokzmelqzac5.streamlit.app/"
+  }
 ];
 
 export const getProjectBySlug = (slug) => projects.find((p) => p.slug === slug);

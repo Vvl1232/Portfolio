@@ -18,6 +18,7 @@ const pages = [
   { url: "/skills", changefreq: "monthly", priority: "0.8" },
   { url: "/experience", changefreq: "monthly", priority: "0.8" },
   { url: "/contact", changefreq: "monthly", priority: "0.7" },
+  { url: "/resume", changefreq: "monthly", priority: "0.8" },
 ];
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

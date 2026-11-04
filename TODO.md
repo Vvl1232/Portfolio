@@ -1,10 +1,7 @@
-# Task: Add New AI Career Assistant Project to Portfolio - COMPLETE
+# Tasks
 
-## Steps:
-1. [x] Create TODO.md with implementation plan
-2. [x] Add new project object to `projects` array in `src/data/projects.js`
-3. [x] Verified: New project "AI Career Assistant" added as last item in projects array. It will appear on /projects page under AI/ML filter, detail page at /projects/ai-career-assistant works automatically.
-4. [x] Task complete
-
-New project is live in the portfolio! View at http://localhost:5173/projects (start dev server if needed: npm run dev)
-
+- [x] Update experience section with latest roles and details
+- [x] Update education with Semester 6 SGPA and junior college / school records
+- [x] Update projects with ReWater (SIH 2025 winner), AI Candidate Discovery, Brain Tumor Detection, etc.
+- [x] Update skills section to match new resume
+- [x] Use latest uploaded resume in resume download section
