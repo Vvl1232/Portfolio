@@ -22,6 +22,16 @@ export default function Experience() {
       ]
     },
     {
+      role: "Chief Coordinator",
+      company: "ZeroGravity",
+      period: "01/2025 – Present",
+      link: "https://www.linkedin.com/company/zerogravity-cc/",
+      bullets: [
+        "Coordinated technical events and seminars improving student engagement across campus.",
+        "Organized 2 Stage Idea Presentation Competition “Innovio 2k26” as Event Coordinator and 2 day flagship event “Technospark2k26”."
+      ]
+    },
+    {
       role: "AI Intern",
       company: "Codec Technologies India",
       period: "06/2025 – 07/2025",
@@ -39,16 +49,6 @@ export default function Experience() {
       bullets: [
         "Developed an ML model using Python & Scikit-Learn, improving prediction accuracy by 90%.",
         "Performed data cleaning, feature scaling, and hyperparameter tuning for optimized performance."
-      ]
-    },
-    {
-      role: "Chief Coordinator",
-      company: "ZeroGravity",
-      period: "01/2025 – Present",
-      link: "https://www.linkedin.com/company/zerogravity-cc/",
-      bullets: [
-        "Coordinated technical events and seminars improving student engagement across campus.",
-        "Organized 2 Stage Idea Presentation Competition “Innovio 2k26” as Event Coordinator and 2 day flagship event “Technospark2k26”."
       ]
     }
   ];
