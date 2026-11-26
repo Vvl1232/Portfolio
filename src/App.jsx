@@ -55,17 +55,19 @@ function App() {
         style={{ minHeight: "100vh", pointerEvents: contentReady ? "auto" : "none" }}
       >
         <AnimatePresence mode="wait" initial={false}>
-          <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<RootLayout />}>
-              <Route index element={<Home />} />
-              <Route path="projects" element={<Projects />} />
-              <Route path="projects/:slug" element={<ProjectDetail />} />
-              <Route path="skills" element={<Skills />} />
-              <Route path="experience" element={<Experience />} />
-              <Route path="contact" element={<Contact />} />
-              <Route path="*" element={<NotFound />} />
-            </Route>
-          </Routes>
+          <Suspense fallback={null}>
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<RootLayout />}>
+                <Route index element={<Home />} />
+                <Route path="projects" element={<Projects />} />
+                <Route path="projects/:slug" element={<ProjectDetail />} />
+                <Route path="skills" element={<Skills />} />
+                <Route path="experience" element={<Experience />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path="*" element={<NotFound />} />
+              </Route>
+            </Routes>
+          </Suspense>
         </AnimatePresence>
       </motion.div>
 
@@ -85,15 +87,7 @@ export default function AppWrapper() {
   return (
     <BrowserRouter>
       <ScrollToTopOnRouteChange />
-      <Suspense
-        fallback={
-          <div className="min-h-screen flex items-center justify-center bg-gray-50">
-            <Loader onComplete={() => {}} />
-          </div>
-        }
-      >
-        <App />
-      </Suspense>
+      <App />
     </BrowserRouter>
   );
 }
