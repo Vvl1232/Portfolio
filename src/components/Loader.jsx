@@ -60,14 +60,18 @@ export default function Loader({ onComplete }) {
     }
   }, [phase, reduceMotion, vLen, lLen, uLen]);
 
+  const onCompleteRef = useRef(onComplete);
+  onCompleteRef.current = onComplete;
+
   useEffect(() => {
     let cancelled = false;
 
     const run = async () => {
       if (reduceMotion) {
-        setPhase("signature");
         await sleep(600);
-        if (!cancelled) onComplete();
+        setPhase("done");
+        await sleep(FADE_OUT_MS);
+        if (!cancelled) onCompleteRef.current?.();
         return;
       }
 
@@ -99,14 +103,14 @@ export default function Loader({ onComplete }) {
       // Exit
       setPhase("done");
       await sleep(FADE_OUT_MS);
-      if (!cancelled) onComplete();
+      if (!cancelled) onCompleteRef.current?.();
     };
 
     run();
     return () => {
       cancelled = true;
     };
-  }, [onComplete, reduceMotion]);
+  }, [reduceMotion]);
 
   return (
     <AnimatePresence>
