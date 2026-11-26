@@ -33,8 +33,6 @@ export default function Loader({ onComplete }) {
   const [uLen, setULen] = useState(0);
 
   useLayoutEffect(() => {
-    if (reduceMotion) return;
-
     const safeGetLen = (el) => {
       try {
         return el?.getTotalLength?.() ?? 0;
@@ -46,10 +44,10 @@ export default function Loader({ onComplete }) {
     setVLen(safeGetLen(vPathRef.current));
     setLLen(safeGetLen(lPathRef.current));
     setULen(safeGetLen(underlinePathRef.current));
-  }, [reduceMotion, phase]);
+  }, [phase]);
 
   useEffect(() => {
-    if (phase !== "signature" || reduceMotion) {
+    if (phase !== "signature") {
       setSignatureReady(false);
       return;
     }
@@ -58,7 +56,7 @@ export default function Loader({ onComplete }) {
       setSignatureReady(true);
       setSignatureRenderKey((k) => k + 1);
     }
-  }, [phase, reduceMotion, vLen, lLen, uLen]);
+  }, [phase, vLen, lLen, uLen]);
 
   const onCompleteRef = useRef(onComplete);
   onCompleteRef.current = onComplete;
@@ -67,14 +65,6 @@ export default function Loader({ onComplete }) {
     let cancelled = false;
 
     const run = async () => {
-      if (reduceMotion) {
-        await sleep(600);
-        setPhase("done");
-        await sleep(FADE_OUT_MS);
-        if (!cancelled) onCompleteRef.current?.();
-        return;
-      }
-
       // Vinit
       await sleep(WORD_MS);
       if (cancelled) return;
@@ -110,7 +100,7 @@ export default function Loader({ onComplete }) {
     return () => {
       cancelled = true;
     };
-  }, [reduceMotion]);
+  }, []);
 
   return (
     <AnimatePresence>
