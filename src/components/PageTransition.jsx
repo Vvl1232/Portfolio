@@ -2,11 +2,12 @@ import { motion } from "framer-motion";
 import { useReducedMotion } from "framer-motion";
 import { EASE_CINEMATIC } from "../utils/animations";
 
-export default function PageTransition({ children }) {
+export default function PageTransition({ children, className = "" }) {
   const shouldReduceMotion = useReducedMotion();
 
   return (
     <motion.div
+      className={className}
       initial={{
         opacity: 0,
         y: shouldReduceMotion ? 0 : 14,

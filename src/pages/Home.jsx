@@ -6,8 +6,8 @@ import { EASE_CINEMATIC } from "../utils/animations";
 
 export default function Home() {
   return (
-    <PageTransition>
-      <section className="relative overflow-hidden py-16 md:py-24">
+    <PageTransition className="flex-1 flex flex-col">
+      <section className="relative flex-1 flex items-center overflow-hidden py-4 md:py-6">
         {/* Background Gradient Effects */}
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute -left-32 top-10 h-[520px] w-[520px] rounded-full bg-cyan-500/20 blur-[120px]" />
@@ -82,7 +82,7 @@ export default function Home() {
               <div className="relative">
                 {/* Photo Container */}
                 <motion.div 
-                  className="relative z-10 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-gray-900/55 to-gray-800/25 backdrop-blur-md shadow-2xl shadow-black/30"
+                  className="relative z-10 overflow-hidden rounded-2xl"
                   animate={{
                     y: [0, -8, 0],
                   }}
@@ -97,14 +97,18 @@ export default function Home() {
                     src="/images/vinit-limkar.jpg" 
                     alt="Vinit Limkar — AI/ML Engineer and Data Science Enthusiast from Pune, India" 
                     loading="eager"
-                    className="h-auto w-full object-cover saturate-90 brightness-95"
+                    className="h-auto max-h-[60vh] w-full object-cover object-top brightness-90 contrast-110"
+                    style={{
+                      WebkitMaskImage: "radial-gradient(ellipse 78% 82% at 50% 45%, black 50%, transparent 96%)",
+                      maskImage: "radial-gradient(ellipse 78% 82% at 50% 45%, black 50%, transparent 96%)",
+                    }}
                     onError={(e) => {
                       // Fallback to a placeholder if the image fails to load
                       e.target.onerror = null;
                       e.target.src = 'image.jpeg';
                     }}
                   />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent" />
+                  <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_50%,rgba(0,0,0,0.85)_95%)]" />
                 </motion.div>
 
 

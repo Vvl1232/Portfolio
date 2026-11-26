@@ -1,5 +1,5 @@
 import PageTransition from "../components/PageTransition";
-import { Mail, Linkedin, Github, ExternalLink, Phone, MapPin, Globe } from "lucide-react";
+import { Mail, Linkedin, Github, ExternalLink, Phone, MapPin } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -79,21 +79,6 @@ export default function Contact() {
                 className="font-semibold text-cyan-300 hover:text-cyan-200 inline-flex items-center gap-1"
               >
                 Vvl1232
-                <ExternalLink className="h-3 w-3" />
-              </a>
-            </div>
-
-            {/* Portfolio */}
-            <div className="flex items-center gap-3">
-              <Globe className="h-4 w-4 text-cyan-300" />
-              <span className="text-[var(--text-secondary)]">Portfolio:</span>
-              <a
-                href="https://vinit-limkar-portfolio.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-                className="font-semibold text-cyan-300 hover:text-cyan-200 inline-flex items-center gap-1"
-              >
-                vinit-limkar-portfolio.vercel.app
                 <ExternalLink className="h-3 w-3" />
               </a>
             </div>
